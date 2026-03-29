@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Умный дом | Подбор системы и кормушки</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <i class="fas fa-microchip"></i>
+            <span>SmartHome</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">
+                <i class="fas fa-home"></i>
+                <span>Главная</span>
+            </a>
+            <a href="feeder1.html" class="nav-link">
+                <i class="fas fa-dove"></i>
+                <span>Кормушка 1</span>
+            </a>
+            <a href="feeder2.html" class="nav-link">
+                <i class="fas fa-camera"></i>
+                <span>Кормушка 2</span>
+            </a>
+            <a href="help.html" class="nav-link">
+                <i class="fas fa-headset"></i>
+                <span>Помощь</span>
+            </a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="hero">
+        <div class="hero-badge">
+            <i class="fas fa-star"></i>
+            <span>Интеллектуальные решения 2026</span>
+        </div>
+        <h1>🏡 Умный дом <span class="gradient-text">+ Автокормушки</span></h1>
+        <p>Подберите идеальный комплекс для вашего дома и пернатых друзей</p>
+        
+        <div style="display: flex; gap: 20px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
+            <div style="text-align: center;">
+                <img src="https://picsum.photos/id/144/200/150" alt="Кормушка 1" style="border-radius: 15px; border: 2px solid var(--primary);">
+                <p><a href="feeder1.html" class="nav-link">Инструкция Кормушка 1</a></p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://picsum.photos/id/127/200/150" alt="Кормушка 2" style="border-radius: 15px; border: 2px solid var(--secondary);">
+                <p><a href="feeder2.html" class="nav-link">Инструкция Кормушка 2</a></p>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <i class="fas fa-check-circle"></i>
+                <span>6+ систем</span>
+            </div>
+            <div class="stat">
+                <i class="fas fa-users"></i>
+                <span>10k+ клиентов</span>
+            </div>
+            <div class="stat">
+                <i class="fas fa-star"></i>
+                <span>4.9 рейтинг</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz-container" id="quizContainer">
+        <div class="quiz-header">
+            <div class="quiz-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div>
+                <h2>Подбор умного дома</h2>
+                <p class="quiz-subtitle">Ответьте на вопросы и посмотрите логику подбора для вашей ситуации</p>
+            </div>
+        </div>
+        
+        <div class="quiz-progress">
+            <div class="progress-bar" id="quizProgressBar"></div>
+            <div class="progress-text">
+                <span id="answeredCount">0</span> / <span id="totalQuestions">20</span> вопросов
+            </div>
+        </div>
+        
+        <div id="questionsArea"></div>
+        
+        <div class="quiz-buttons">
+            <button id="submitQuiz" class="btn-primary">
+                <i class="fas fa-magic"></i>
+                <span>Узнать мою систему</span>
+            </button>
+            <button id="resetQuiz" class="btn-secondary" style="display: none;">
+                <i class="fas fa-redo-alt"></i>
+                <span>Пройти заново</span>
+            </button>
+        </div>
+        
+        <div id="quizResult" class="quiz-result" style="display: none;"></div>
+    </div>
+
+    <div class="section-header">
+        <h2 class="section-title">
+            <i class="fas fa-microchip"></i>
+            Доступные умные дома и их особенности
+        </h2>
+        <p>Сравнение стоимости и ключевых характеристик систем</p>
+    </div>
+    
+    <div class="grid-cards">
+        <div class="smart-card">
+            <div class="card-badge">🔥 Популярный</div>
+            <div class="card-icon"><i class="fab fa-yandex"></i></div>
+            <h3>Яндекс (Алиса)</h3>
+            <div class="price">от 3 990 ₽</div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i>Простота «включил и работает»</li>
+                <li><i class="fas fa-check"></i>Отличная голосовая Алиса</li>
+                <li><i class="fas fa-check"></i>Широкая доступность устройств</li>
+                <li><i class="fas fa-check"></i>Подходит для квартир и домов</li>
+            </ul>
+            <button class="btn-buy" onclick="buyOnAvito('Яндекс Умный дом с Алисой')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Купить на Авито</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-building"></i></div>
+            <h3>Sber (Салют)</h3>
+            <div class="price">от 5 490 ₽</div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i>Экосистема Сбера</li>
+                <li><i class="fas fa-check"></i>Умные колонки и ТВ</li>
+                <li><i class="fas fa-check"></i>Интеграция с видеоаналитикой</li>
+                <li><i class="fas fa-check"></i>Надёжная облачная платформа</li>
+            </ul>
+            <button class="btn-buy" onclick="buyOnAvito('Sber Умный дом')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Купить на Авито</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-plug"></i></div>
+            <h3>Tuya Smart</h3>
+            <div class="price">от 1 500 ₽</div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i>Огромный выбор устройств</li>
+                <li><i class="fas fa-check"></i>Низкий порог входа</li>
+                <li><i class="fas fa-check"></i>Работа с Zigbee/Wi-Fi</li>
+                <li><i class="fas fa-check"></i>Подходит для старта и DIY</li>
+            </ul>
+            <button class="btn-buy" onclick="buyOnAvito('Tuya Smart устройства')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Купить на Авито</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <div class="smart-card">
+            <div class="card-badge">🍏 Премиум</div>
+            <div class="card-icon"><i class="fab fa-apple"></i></div>
+            <h3>Apple HomeKit</h3>
+            <div class="price">от 8 000 ₽</div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i>Максимальная приватность</li>
+                <li><i class="fas fa-check"></i>Бесшовная работа с iPhone</li>
+                <li><i class="fas fa-check"></i>Локальное управление</li>
+                <li><i class="fas fa-check"></i>Стильный дизайн устройств</li>
+            </ul>
+            <button class="btn-buy" onclick="buyOnAvito('Apple HomeKit')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Купить на Авито</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>Home Assistant</h3>
+            <div class="price">от 0 ₽ (open source)</div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i>Абсолютная гибкость</li>
+                <li><i class="fas fa-check"></i>Локальная работа без облака</li>
+                <li><i class="fas fa-check"></i>Объединяет любые устройства</li>
+                <li><i class="fas fa-check"></i>Продвинутые сценарии</li>
+            </ul>
+            <button class="btn-buy" onclick="buyOnAvito('Home Assistant железо')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Купить на Авито</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>HiTE PRO</h3>
+            <div class="price">от 45 000 ₽</div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i>Профессиональная проводная система</li>
+                <li><i class="fas fa-check"></i>Установка под ключ</li>
+                <li><i class="fas fa-check"></i>Максимальная надёжность</li>
+                <li><i class="fas fa-check"></i>Для частных домов и офисов</li>
+            </ul>
+            <button class="btn-buy" onclick="buyOnAvito('HiTE PRO')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Купить на Авито</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <h2 class="section-title">
+            <i class="fas fa-question-circle"></i>
+            Частые вопросы (FAQ)
+        </h2>
+        <p>Ответы на популярные вопросы из нашей поддержки</p>
+    </div>
+    
+    <div class="faq-grid">
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>🤔 Как подключить умный дом к кормушке?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">Все наши комплекты совместимы с кормушками через Wi-Fi/Zigbee модуль. В инструкции описана синхронизация. Процесс занимает не более 10 минут.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>⚖️ Что выбрать: Яндекс или Home Assistant?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">Если важна простота — Яндекс. Если гибкость и локальность — Home Assistant. Часто используют гибрид: HA как мозг, колонки как интерфейс.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>🔒 Какая система самая приватная?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">Home Assistant и Apple HomeKit (при локальной настройке) — лидеры по приватности. Ваши данные не покидают пределы дома.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>✅ Есть ли гарантия на устройства?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">12 месяцев на все устройства. Обмен/возврат в течение 14 дней по закону. Предоставляем официальную гарантию.</div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4><i class="fas fa-microchip"></i> SmartHome</h4>
+            <p>Интеллектуальные решения для вашего дома с 2020 года</p>
+        </div>
+        <div class="footer-section">
+            <h4>Навигация</h4>
+            <a href="index.html">Главная</a>
+            <a href="feeder1.html">Кормушка 1</a>
+            <a href="feeder2.html">Кормушка 2</a>
+            <a href="help.html">Помощь</a>
+        </div>
+        <div class="footer-section">
+            <h4>Контакты</h4>
+            <p><i class="fas fa-envelope"></i> info@smarthome.ru</p>
+            <p><i class="fas fa-phone"></i> +7 (800) 123-45-67</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Умный дом + Кормушки | Все ссылки ведут на <i class="fas fa-music"></i> Rickroll</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    const questions = [
+        { text: "Какой у вас уровень технической подготовки?", options: ["Новичок: хочу «включил и работает»", "Средний: могу настроить по инструкции", "Продвинутый: не боюсь терминала и скриптов"] },
+        { text: "Сколько времени вы готовы потратить на первоначальную настройку?", options: ["До 1 часа", "Несколько вечеров", "Неограниченно, если результат того стоит"] },
+        { text: "Предпочитаете готовые решения «под ключ» или собирать сами?", options: ["Только готовое решение", "Компромиссный вариант", "Хочу собирать и кастомизировать сам"] },
+        { text: "Какой бюджет вы планируете на старте?", options: ["До 10 000 ₽", "10–50 000 ₽", "50–150 000 ₽", "Не ограничен"] },
+        { text: "Что вы автоматизируете?", options: ["Квартира (1–3 комнаты)", "Большая квартира / таунхаус", "Частный дом с участком", "Офис / коммерческое помещение"] },
+        { text: "Планируете ли вы расширять систему в будущем?", options: ["Нет, хватит базового набора", "Возможно, добавлю несколько устройств", "Да, хочу масштабируемую платформу"] },
+        { text: "Какими смартфонами пользуетесь вы и ваша семья?", options: ["Только iPhone", "Только Android", "И те, и другие", "Не важно, главное — веб-интерфейс"] },
+        { text: "Есть ли у вас уже умные устройства? Какие?", options: ["Нет, начинаю с нуля", "Устройства Яндекс / Сбер", "Устройства Xiaomi / Aqara / Tuya", "Устройства с поддержкой HomeKit", "Разношёрстные устройства разных брендов"] },
+        { text: "Насколько для вас важно голосовое управление?", options: ["Обязательно, хочу управлять голосом", "Желательно, но не критично", "Не использую голосовые команды"] },
+        { text: "Какой голосовой ассистент вам ближе?", options: ["Алиса (Яндекс)", "Салют (Сбер)", "Siri (Apple)", "Не важно / не пользуюсь"] },
+        { text: "Насколько важна работа системы без интернета?", options: ["Критично: всё должно работать локально", "Желательно, но допустимы облачные зависимости", "Не важно, интернет всегда есть"] },
+        { text: "Как вы относитесь к хранению данных в облаке?", options: ["Категорически против, только локально", "Нейтрально, если это удобно", "Доверяю крупным компаниям"] },
+        { text: "Насколько важна защита персональных данных?", options: ["Максимальная приватность — приоритет", "Важно, но готов к компромиссам", "Не задумываюсь об этом"] },
+        { text: "Какие сценарии автоматизации вам нужны?", options: ["Простые: свет по расписанию/датчику", "Средние: сложные условия, геолокация", "Продвинутые: скрипты, API, внешние сервисы"] },
+        { text: "Нужна ли интеграция с безопасностью, видеонаблюдением?", options: ["Да, это приоритет", "Возможно в будущем", "Нет, не планирую"] },
+        { text: "Важен ли единый интерфейс для управления?", options: ["Да, хочу всё в одном приложении", "Нет, готов использовать несколько", "Хочу свой кастомный дашборд"] },
+        { text: "Предпочитаете беспроводные или проводные решения?", options: ["Только беспроводные: проще и дешевле", "Проводные: надёжнее для капитального ремонта", "Гибридный вариант"] },
+        { text: "Нужна ли профессиональная установка и техподдержка?", options: ["Да, хочу сервис «под ключ»", "Только консультации, остальное сам", "Полностью самостоятельно"] },
+        { text: "Как относитесь к обновлениям системы?", options: ["Хочу стабильности: настроил и забыл", "Готов к обновлениям, если они полезны", "Люблю экспериментировать с новым"] },
+        { text: "Что для вас важнее всего при выборе?", options: ["Простота использования", "Цена / доступность устройств", "Гибкость и кастомизация", "Надёжность и автономность", "Приватность и безопасность"] }
+    ];
+
+    const systems = {
+        yandex: { name: "Яндекс (Алиса)", icon: "fab fa-yandex", color: "#fc3f1d" },
+        sber: { name: "Sber (Салют)", icon: "fas fa-building", color: "#2d9c5c" },
+        tuya: { name: "Tuya Smart", icon: "fas fa-plug", color: "#3b82f6" },
+        homekit: { name: "Apple HomeKit", icon: "fab fa-apple", color: "#555" },
+        hass: { name: "Home Assistant", icon: "fas fa-code", color: "#18bcc9" },
+        hite: { name: "HiTE PRO", icon: "fas fa-shield-alt", color: "#8b5cf6" }
+    };
+
+    const descriptions = {
+        yandex: "🏠 **Яндекс (Алиса)** — идеальный выбор для новичков. Простота, доступные устройства, отличное голосовое управление.",
+        sber: "🌿 **Sber (Салют)** — надёжная экосистема от Сбера. Хорошая интеграция с умными ТВ и камерами.",
+        tuya: "🐾 **Tuya Smart** — самое бюджетное решение. Огромный выбор устройств от разных производителей.",
+        homekit: "🍏 **Apple HomeKit** — максимальная приватность и бесшовная работа с iPhone/iPad.",
+        hass: "⚙️ **Home Assistant** — абсолютная свобода. Объединяет любые устройства, работает локально.",
+        hite: "🔧 **HiTE PRO** — профессиональная проводная система. Установка под ключ, максимальная надёжность."
+    };
+
+    function calculateScores(answers) {
+        let scores = { yandex: 0, sber: 0, tuya: 0, homekit: 0, hass: 0, hite: 0 };
+        if (answers[0] === 0) { scores.yandex += 3; scores.sber += 3; scores.tuya += 2; }
+        else if (answers[0] === 2) { scores.hass += 5; scores.hite += 2; }
+        if (answers[1] === 0) { scores.yandex += 2; scores.sber += 2; scores.tuya += 2; }
+        else if (answers[1] === 2) { scores.hass += 4; }
+        if (answers[2] === 0) { scores.yandex += 3; scores.sber += 3; scores.homekit += 2; }
+        else if (answers[2] === 2) { scores.hass += 5; scores.tuya += 2; }
+        if (answers[3] === 0) scores.tuya += 4;
+        else if (answers[3] === 2) { scores.hite += 3; scores.hass += 2; }
+        if (answers[4] === 2 || answers[4] === 3) { scores.hite += 4; scores.hass += 3; }
+        if (answers[6] === 0) scores.homekit += 5;
+        if (answers[10] === 0) { scores.hass += 5; scores.hite += 3; }
+        return scores;
+    }
+
+    function getRecommendation(scores) {
+        let maxScore = -1, bestSystem = null;
+        for (let [system, score] of Object.entries(scores)) {
+            if (score > maxScore) { maxScore = score; bestSystem = system; }
+        }
+        return { system: bestSystem, description: descriptions[bestSystem], score: maxScore };
+    }
+
+    let userAnswers = new Array(questions.length).fill(null);
+    
+    function updateProgress() {
+        const answered = userAnswers.filter(a => a !== null).length;
+        document.getElementById('answeredCount').textContent = answered;
+        const percent = (answered / questions.length) * 100;
+        document.getElementById('quizProgressBar').style.width = `${percent}%`;
+    }
+
+    function renderQuestions() {
+        const container = document.getElementById('questionsArea');
+        container.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const qDiv = document.createElement('div');
+            qDiv.className = 'quiz-question';
+            qDiv.innerHTML = `<p><span class="q-num">${idx+1}</span> ${q.text}</p><div class="quiz-options" id="q-${idx}"></div>`;
+            container.appendChild(qDiv);
+            const optsDiv = document.getElementById(`q-${idx}`);
+            q.options.forEach((opt, optIdx) => {
+                const optSpan = document.createElement('span');
+                optSpan.className = 'quiz-option';
+                optSpan.textContent = opt;
+                optSpan.onclick = () => { selectOption(idx, optIdx); updateProgress(); };
+                if (userAnswers[idx] === optIdx) optSpan.classList.add('selected');
+                optsDiv.appendChild(optSpan);
+            });
+        });
+        updateProgress();
+    }
+    
+    function selectOption(qIdx, optIdx) {
+        userAnswers[qIdx] = optIdx;
+        const opts = document.querySelectorAll(`#q-${qIdx} .quiz-option`);
+        opts.forEach((opt, i) => { if (i === optIdx) opt.classList.add('selected'); else opt.classList.remove('selected'); });
+    }
+    
+    function submitQuiz() {
+        for (let i = 0; i < userAnswers.length; i++) {
+            if (userAnswers[i] === null) {
+                alert(`Пожалуйста, ответьте на вопрос ${i+1}`);
+                return;
+            }
+        }
+        const scores = calculateScores(userAnswers);
+        const rec = getRecommendation(scores);
+        const resultDiv = document.getElementById('quizResult');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `
+            <div class="result-icon"><i class="${systems[rec.system].icon}"></i></div>
+            <h3>🎯 Ваша рекомендуемая система:</h3>
+            <div class="system-badge" style="background: ${systems[rec.system].color}">${systems[rec.system].name}</div>
+            <p style="margin-top: 16px;">${rec.description}</p>
+            <div class="hybrid-tip">
+                <i class="fas fa-lightbulb"></i>
+                <p>💡 Совет: Многие пользователи выбирают комбинацию <strong>Home Assistant</strong> как «мозг» системы + <strong>Яндекс</strong> как голосовой интерфейс.</p>
+            </div>
+            <button class="btn-primary" onclick="buyOnAvito('Все системы умного дома')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>🛒 Перейти к покупке</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        `;
+        document.getElementById('submitQuiz').style.display = 'none';
+        document.getElementById('resetQuiz').style.display = 'inline-flex';
+        resultDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    function resetQuiz() {
+        userAnswers.fill(null);
+        renderQuestions();
+        document.getElementById('quizResult').style.display = 'none';
+        document.getElementById('submitQuiz').style.display = 'inline-flex';
+        document.getElementById('resetQuiz').style.display = 'none';
+        window.scrollTo({ top: document.getElementById('quizContainer').offsetTop - 100, behavior: 'smooth' });
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        renderQuestions();
+        document.getElementById('submitQuiz').onclick = submitQuiz;
+        document.getElementById('resetQuiz').onclick = resetQuiz;
+        
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const icon = themeToggle.querySelector('i');
+            if (document.body.classList.contains('dark-theme')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+    });
+</script> 
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кормушка 1 | Умный дом</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <i class="fas fa-microchip"></i>
+            <span>SmartHome</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Главная</span>
+            </a>
+            <a href="feeder1.html" class="nav-link active">
+                <i class="fas fa-dove"></i>
+                <span>Кормушка 1</span>
+            </a>
+            <a href="feeder2.html" class="nav-link">
+                <i class="fas fa-camera"></i>
+                <span>Кормушка 2</span>
+            </a>
+            <a href="help.html" class="nav-link">
+                <i class="fas fa-headset"></i>
+                <span>Помощь</span>
+            </a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="hero">
+        <h1>🐦 Кормушка 1 <span class="gradient-text">«Умная Классика»</span></h1>
+        <p>Надёжное решение для вашего сада или балкона</p>
+    </div>
+
+    <div class="grid-cards" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-seedling"></i></div>
+            <h3>Характеристики</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Автодозация корма (1-4 раза в день)</li>
+                <li><i class="fas fa-check"></i> Объём резервуара: 2 литра</li>
+                <li><i class="fas fa-check"></i> Защита от белок и грызунов</li>
+                <li><i class="fas fa-check"></i> Питание: USB или батарейки</li>
+            </ul>
+            <div class="price">3 490 ₽</div>
+            <button class="btn-buy" onclick="buyOnAvito('Кормушка Умная Классика')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Купить на Авито</span>
+            </button>
+        </div>
+
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-box-open"></i></div>
+            <h3>Комплектация</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-box"></i> Сама кормушка</li>
+                <li><i class="fas fa-wrench"></i> Набор креплений</li>
+                <li><i class="fas fa-book"></i> Инструкция на русском</li>
+                <li><i class="fas fa-gift"></i> Стартовый пакет корма</li>
+            </ul>
+            <img src="https://picsum.photos/id/144/400/200" style="width:100%; border-radius: 1rem; margin-top: 1rem;" alt="feeder">
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2026 Умный дом + Кормушки | Все ссылки ведут на Rickroll</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

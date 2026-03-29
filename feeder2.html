@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Кормушка 2 Макс | SmartHome</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <i class="fas fa-microchip"></i>
+            <span>SmartHome</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Главная</span>
+            </a>
+            <a href="feeder1.html" class="nav-link">
+                <i class="fas fa-dove"></i>
+                <span>Кормушка 1</span>
+            </a>
+            <a href="feeder2.html" class="nav-link active">
+                <i class="fas fa-weight-hanging"></i>
+                <span>Кормушка 2</span>
+            </a>
+            <a href="help.html" class="nav-link">
+                <i class="fas fa-headset"></i>
+                <span>Помощь</span>
+            </a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="hero">
+        <div class="hero-badge">
+            <i class="fas fa-crown"></i>
+            <span>Модель Максимальной Автономности 2026</span>
+        </div>
+        <h1>🐧 Кормушка 2 <span class="gradient-text">«Автономный Флагман»</span></h1>
+        <p>Забудьте о частом наполнении — объем 4 литра и умная дозация корма</p>
+    </div>
+
+    <div class="grid-cards">
+        <div class="smart-card" style="grid-column: span 2; padding: 1.5rem;">
+            <div style="display: flex; gap: 1.5rem; align-items: center;">
+                <img src="https://picsum.photos/id/102/500/350" style="width: 55%; border-radius: 1.5rem; object-fit: cover;" alt="Кормушка Автономный Флагман">
+                <div style="flex: 1;">
+                    <div class="card-icon"><i class="fas fa-box"></i></div>
+                    <h3>Премиум дизайн</h3>
+                    <p style="color: var(--text-light);">Металлический каркас, защита от УФ-лучей и влаги IP66. Идеально для суровых зим.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="smart-card">
+            <div class="card-badge">💰 Выгодно</div>
+            <div class="card-icon"><i class="fas fa-tags"></i></div>
+            <h3>Стоимость</h3>
+            <p style="margin-top: -10px; color: var(--text-light);">*включает монтажный комплект</p>
+            <div class="price">7 490 ₽</div>
+            <button class="btn-buy" onclick="buyOnAvito('Кормушка 2 Автономный Флагман')">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Купить на Авито</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="section-header" style="margin-top: 4rem;">
+        <h2 class="section-title">
+            <i class="fas fa-list-ul"></i>
+            Преимущества модели
+        </h2>
+        <p>Почему это лучшее решение для загородного дома</p>
+    </div>
+
+    <div class="grid-cards" style="margin-bottom: 3rem;">
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-warehouse"></i></div>
+            <h3>Огромный объем</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> 4 литра (до 3 кг корма)</li>
+                <li><i class="fas fa-check"></i> Хватает на 2-4 недели</li>
+                <li><i class="fas fa-check"></i> Прозрачное окно уровня</li>
+            </ul>
+        </div>
+        
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-robot"></i></div>
+            <h3>Умная подача</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Дозация по расписанию</li>
+                <li><i class="fas fa-check"></i> Wi-Fi управление</li>
+                <li><i class="fas fa-check"></i> Датчик опустошения резервуара</li>
+            </ul>
+        </div>
+        
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Надежная защита</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Анти-беличья система</li>
+                <li><i class="fas fa-check"></i> Усиленный замок крышки</li>
+                <li><i class="fas fa-check"></i> Материалы премиум-класса</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <h2 class="section-title">
+            <i class="fas fa-images"></i>
+            Фотогалерея
+        </h2>
+        <p>Как кормушка смотрится в реальных условиях</p>
+    </div>
+    
+    <div class="grid-cards" style="grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 4rem;">
+        <div class="smart-card" style="padding: 1rem;">
+            <img src="https://picsum.photos/id/26/400/300" style="width:100%; border-radius: 1rem;" alt="Установка на дереве">
+        </div>
+        <div class="smart-card" style="padding: 1rem;">
+            <img src="https://picsum.photos/id/144/400/300" style="width:100%; border-radius: 1rem;" alt="Птицы у кормушки">
+        </div>
+        <div class="smart-card" style="padding: 1rem;">
+            <img src="https://picsum.photos/id/102/400/300" style="width:100%; border-radius: 1rem;" alt="Прозрачный резервуар">
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2026 Умный дом + Кормушки | Все ссылки ведут на Rickroll</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
