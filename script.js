@@ -51,5 +51,5 @@ document.addEventListener('DOMContentLoaded', () => {
  
 
 function buyOnAvito(productName) {
-    window.open('https://rickroll.link', '_blank');
+    window.open('', '_blank');
 }
