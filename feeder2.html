@@ -68,7 +68,8 @@
             <h3>Стоимость</h3>
             <p style="margin-top: -10px; color: var(--text-light);">*включает монтажный комплект</p>
             <div class="price">7 490 ₽</div>
-            <button class="btn-buy" onclick="buyOnAvito('Кормушка 2 Автономный Флагман')">
+            <!-- ОБНОВЛЕНО: Ссылка на профиль продавца на Авито -->
+            <button class="btn-buy" onclick="window.open('https://www.avito.ru/user/a2ffb5dc9ff438abee200d5601400a44/profile', '_blank')">
                 <i class="fas fa-shopping-cart"></i>
                 <span>Купить на Авито</span>
                 <i class="fas fa-arrow-right"></i>
@@ -136,11 +137,20 @@
         </div>
     </div>
 
+    <!-- БЛОК С СОВЕТОМ ПО ИНСТРУКЦИИ -->
+    <div class="hybrid-tip" style="max-width: 800px; margin: 0 auto 3rem; padding: 2rem;">
+        <i class="fas fa-lightbulb" style="font-size: 2.5rem;"></i>
+        <div>
+            <h3 style="margin-bottom: 0.5rem;">📖 Инструкция к Feeder 2</h3>
+            <p>Данная модель управляется аналогично базовой версии (Feeder X). Используйте <a href="feeder1.html#manual" style="color: var(--primary);">руководство пользователя с первой страницы</a> для настройки Wi-Fi, калибровки барабана и установки расписания. Различия только в увеличенном объеме бункера.</p>
+        </div>
+    </div>
+
 </div>
 
 <footer class="footer">
     <div class="footer-bottom">
-        <p>© 2026 Умный дом + Кормушки | Все ссылки ведут на Rickroll</p>
+        <p>© 2026 Умный дом + Кормушки | Помощь в Telegram: @SmartHomeFeeder_help_bot</p>
     </div>
 </footer>
 

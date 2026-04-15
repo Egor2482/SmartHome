@@ -57,7 +57,8 @@
                 <li><i class="fas fa-check"></i> Питание: USB или батарейки</li>
             </ul>
             <div class="price">3 490 ₽</div>
-            <button class="btn-buy" onclick="buyOnAvito('Кормушка Умная Классика')">
+            <!-- ОБНОВЛЕНО: Ссылка на профиль продавца на Авито -->
+            <button class="btn-buy" onclick="window.open('https://www.avito.ru/user/a2ffb5dc9ff438abee200d5601400a44/profile', '_blank')">
                 <i class="fas fa-shopping-cart"></i>
                 <span>Купить на Авито</span>
             </button>
@@ -75,11 +76,74 @@
             <img src="https://picsum.photos/id/144/400/200" style="width:100%; border-radius: 1rem; margin-top: 1rem;" alt="feeder">
         </div>
     </div>
+
+    <!-- НОВЫЙ БЛОК: РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ -->
+    <div class="section-header" style="margin-top: 4rem;">
+        <h2 class="section-title">
+            <i class="fas fa-book-open"></i>
+            🐟 Руководство пользователя: Умная кормушка Feeder X
+        </h2>
+        <p>Добро пожаловать! Эта кормушка создана для того, чтобы ваши питомцы всегда получали корм вовремя.</p>
+    </div>
+
+    <div class="grid-cards" style="margin-bottom: 2rem;">
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+            <h3>🎛 Назначение кнопок</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-arrow-up"></i> <strong>ВВЕРХ (UP) / ВНИЗ (DOWN):</strong> Перемещение по меню, изменение времени.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>ВВОД (ENTER):</strong> Подтверждение выбора, вход в меню.</li>
+                <li><i class="fas fa-undo-alt"></i> <strong>НАЗАД (BACK):</strong> Возврат в предыдущее меню или отмена.</li>
+            </ul>
+            <p style="color: var(--text-light); margin-top: 1rem; font-style: italic;">*Если не нажимать кнопки 1 минуту, экран вернется на заставку.</p>
+        </div>
+
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-wifi"></i></div>
+            <h3>📡 Шаг 1. Первое включение и Wi-Fi</h3>
+            <ol style="margin-left: 1.2rem; color: var(--text-light);">
+                <li>Включите кормушку в сеть.</li>
+                <li>Найдите сеть <code>Feeder-X Fallback Hotspot</code> (пароль: <code>2zVV9TaKZ4TB</code>).</li>
+                <li>На телефоне откроется окно настроек.</li>
+                <li>Выберите вашу домашнюю Wi-Fi сеть и введите пароль.</li>
+                <li>Кормушка перезагрузится и синхронизирует время.</li>
+            </ol>
+        </div>
+
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-crosshairs"></i></div>
+            <h3>🎯 Шаг 2. Калибровка (Хоуминг)</h3>
+            <p>Обязательное действие перед началом работы.</p>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Нажмите <strong>ENTER</strong> для входа в Главное меню.</li>
+                <li><i class="fas fa-check"></i> Выберите пункт <strong>«Хоуминг»</strong> и нажмите ENTER.</li>
+                <li><i class="fas fa-check"></i> Барабан начнет вращаться до обнаружения магнита.</li>
+                <li><i class="fas fa-check"></i> На экране появится надпись <strong>«Дом найден!»</strong>.</li>
+            </ul>
+            <div class="hybrid-tip" style="margin-top: 1rem;">
+                <i class="fas fa-info-circle"></i>
+                <p>Повторяйте только если провернули барабан руками или отключали питание.</p>
+            </div>
+        </div>
+
+        <div class="smart-card">
+            <div class="card-icon"><i class="fas fa-list-ul"></i></div>
+            <h3>⚙️ Главное меню и функции</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-fish"></i> <strong>Кормление:</strong> Ручная выдача одной порции прямо сейчас.</li>
+                <li><i class="fas fa-clock"></i> <strong>Настройка расписания:</strong> Две программы (P1 и P2) для автоматического кормления.</li>
+                <li><i class="fas fa-crosshairs"></i> <strong>Хоуминг:</strong> Повторная калибровка.</li>
+                <li><i class="fas fa-rotate"></i> <strong>Повернуть на ячейку:</strong> Поворот барабана для удобной засыпки корма или чистки.</li>
+                <li><i class="fas fa-circle-info"></i> <strong>Информация:</strong> Статус Wi-Fi, время, статус калибровки (Homed).</li>
+                <li><i class="fas fa-hourglass-half"></i> <strong>Часы:</strong> Ручная установка времени (если нет интернета).</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <footer class="footer">
     <div class="footer-bottom">
-        <p>© 2026 Умный дом + Кормушки | Все ссылки ведут на Rickroll</p>
+        <p>© 2026 Умный дом + Кормушки | Помощь в Telegram: @SmartHomeFeeder_help_bot</p>
     </div>
 </footer>
 
